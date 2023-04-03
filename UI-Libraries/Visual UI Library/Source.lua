@@ -321,6 +321,18 @@ do
 
         return Object
     end
+    --Added By Me []
+     function Utility:Log(Type, Message)
+        Type = Type:lower()
+
+        if Type == 'error' then
+            error('[ Visual ] Error: ' .. Message)
+        elseif Type == 'log' then
+            print('[ Visual ] ' .. Message)
+        elseif Type == 'warn' then
+            warn('[ Visual ] Warning: ' .. Message)
+        end
+    end
 
     function Library:CreateNotification(Title, Text, Duration)
         local Theme = {}
@@ -335,14 +347,14 @@ do
             local Text = Text or 'Text'
             local Duration = Duration or 5
 
-            if not CoreGui:FindFirstChild('Visual UI Library | .gg/puxxCphTnK | Notifications') then
+            if not CoreGui:FindFirstChild('VarxHub | Notifications') then
                 Utility:Create('ScreenGui', {
-                    Name = 'Visual UI Library | .gg/puxxCphTnK | Notifications',
+                    Name = 'VarxHub | Notifications',
                     Parent = CoreGui
                 })
             else
                 Utility:Create('Frame', {
-                    Parent = CoreGui:FindFirstChild('Visual UI Library | .gg/puxxCphTnK | Notifications'),
+                    Parent = CoreGui:FindFirstChild('VarxHub | Notifications'),
                     Name = 'Notification'..tostring(Amount + 1),
                     BackgroundColor3 = Theme.BackgroundColor,
                     BorderSizePixel = 0,
@@ -398,7 +410,7 @@ do
                 })
 
                 Amount = Amount + 1
-                local Holder = CoreGui:FindFirstChild('Visual UI Library | .gg/puxxCphTnK | Notifications')['Notification'..tostring(Amount)]
+                local Holder = CoreGui:FindFirstChild('VarxHub | Notifications')['Notification'..tostring(Amount)]
                 local TitleObj = Holder['NotificationTitle']
                 local TextObj = Holder['NotificationText']
                 local TextSize = TextService:GetTextSize(Text, 14, Enum.Font.Gotham, Vector2.new(300, math.huge))
