@@ -216,6 +216,21 @@ local Themes = {
         PromptColor = Color3.fromRGB(40, 40, 40),
         NotificationColor = Color3.fromRGB(25, 25, 25),
         NotificationUIStrokeColor = Color3.fromRGB(255, 170, 60)
+    },
+    ['Expirimental'] = {
+            BackgroundColor = Color3.fromRGB(25,25,25),
+            SidebarColor = Color3.fromRGB(35,35,35),
+            PrimaryTextColor = Color3.fromRGB(255,255,255),
+            SecondaryTextColor = Color3.fromRGB(135,135,135),
+            UIStrokeColor = Color3.fromRGB(52, 49, 49),
+            PrimaryElementColor = Color3.fromRGB(30,30,30),
+            SecondaryElementColor = Color3.fromRGB(45,45,45),
+            OtherElementColor = Color3.fromRGB(30,30,30),
+            ScrollBarColor =  Color3.fromRGB(17, 107, 113),
+            PromptColor = Color3.fromRGB(50,50,50),
+            NotifiColor = Color3.fromRGB(50,50,50),
+            NotificationUIStrokeColor = Color3.fromRGB(255,170,60)
+
     }
 }
 
