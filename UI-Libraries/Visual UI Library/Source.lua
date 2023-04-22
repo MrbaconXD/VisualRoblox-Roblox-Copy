@@ -1157,6 +1157,8 @@ function Library:CreateWindow(HubName, GameName, IntroText, IntroIcon, ImprovePe
             Theme = Themes['Script-Ware']
         elseif Theme == 'kiriot' then
             Theme = Themes['Kiriot']
+        elseif Theme == 'Expirimental' then
+            Theme = Themes['Expirimental']
         end
     end
     local NewTable = {}
